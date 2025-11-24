@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <!--    <ImageView-->
+    <!--        android:id="@+id/ivTopDialogImg"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_marginTop="-60dp"-->
+    <!--        android:scaleType="fitXY"-->
+    <!--        android:src="@drawable/top_dialog_img"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toTopOf="parent" />-->
+
+    <include
+        android:id="@+id/incFileDetailsTopImg"
+        layout="@layout/top_actionbar_bg_img_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-90dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvDialogHeadText"
+        style="@style/primary_heading_text_24sp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Enter PDF Name"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/incFileDetailsTopImg" />
+
+    <!--    <TextView-->
+    <!--        android:id="@+id/tvDialogSubHeadText"-->
+    <!--        style="@style/primary_sub_heading_text_14sp"-->
+    <!--        android:layout_width="0dp"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:text="Are you sure you want to Delete this file. Are you sure you want to Delete this file. Are you sure you want to Delete this file."-->
+    <!--        android:textAlignment="center"-->
+    <!--        android:textColor="@color/black"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/tvDialogHeadText" />-->
+
+
+    <!-- <EditText
+         android:id="@+id/edtTextDialog"
+         style="@style/primary_sub_heading_text_16sp"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:hint="Enter PDF Name"
+         android:inputType="text"
+         android:paddingHorizontal="20dp"
+         android:textColor="@color/black"
+         android:textColorHint="@color/black"
+         app:layout_constraintEnd_toEndOf="parent"
+         app:layout_constraintStart_toStartOf="parent"
+         app:layout_constraintTop_toBottomOf="@+id/tvDialogHeadText" />-->
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/edtTextLayout"
+        style="@style/input_type_text_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvDialogHeadText">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edtText"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:hint=""
+            android:inputType="text"
+            android:padding="10dp"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnDialogYes"
+        style="@style/blue_backgroud_button_style_22sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtTextLayout" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnDialogNo"
+        style="@style/blue_backgroud_button_style_22sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cancel"
+        app:layout_constraintEnd_toStartOf="@id/btnDialogYes"
+        app:layout_constraintTop_toBottomOf="@+id/edtTextLayout" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

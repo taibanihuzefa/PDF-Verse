@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">PDF Verse</string>
+
+    <!--HOME DATA-->
+    <string name="CONVERT_YOUR_DOCUMENT">Convert your document</string>
+    <string name="CATEGORIES">Categories</string>
+    <string name="PHOTO_TO_PDF">Photo to PDF</string>
+    <string name="IMAGE_TO_PDF">Image to PDF</string>
+    <string name="WATERMARK">Watermark</string>
+    <string name="PASSWORD">Password</string>
+    <string name="SPLIT">Spilt</string>
+    <string name="COMPRESS">Compress</string>
+    <string name="UNZIP">Unzip</string>
+    <string name="REMOVE_PASSWORD">Remove Password</string>
+    <string name="MERGE">Merge</string>
+    <string name="HISTORY">History</string>
+    <string name="VIEW_ALL">View all</string>
+    <string name="NO_FILES_FOUND">No Files Found</string>
+
+    <!--    File details list options -->
+    <string name="RENAME">Rename</string>
+    <string name="DELETE">Delete</string>
+    <string name="REORDER_PAGES">Reorder Pages</string>
+    <string name="SAMPLE_TEXT">Sample Text</string>
+    //i need the lorem ipsum text
+
+    <string name="LARGE_TEXT">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</string>
+    <string name="FILE_SIZE">2.0 MB</string>
+    <string name="PREVIEW">Preview</string>
+    <string name="SHARE">Share</string>
+
+
+</resources>

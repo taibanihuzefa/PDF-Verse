@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <!--    <ImageView-->
+    <!--        android:id="@+id/ivTopDialogImg"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_marginTop="-60dp"-->
+    <!--        android:scaleType="fitXY"-->
+    <!--        android:src="@drawable/top_dialog_img"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toTopOf="parent" />-->
+
+    <include
+        android:id="@+id/incFileDetailsTopImg"
+        layout="@layout/top_actionbar_bg_img_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-90dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvDialogHeadText"
+        style="@style/primary_heading_text_24sp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Alert"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/incFileDetailsTopImg" />
+
+    <TextView
+        android:id="@+id/tvDialogSubHeadText"
+        style="@style/primary_sub_heading_text_14sp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Are you sure you want to Delete this file. Are you sure you want to Delete this file. Are you sure you want to Delete this file."
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvDialogHeadText" />
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnDialogYes"
+        style="@style/blue_backgroud_button_style_22sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Yes"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvDialogSubHeadText" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnDialogNo"
+        style="@style/blue_backgroud_button_style_22sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="No"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnDialogYes" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

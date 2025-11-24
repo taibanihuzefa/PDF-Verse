@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?><!--<shape xmlns:android="http://schemas.android.com/apk/res/android">-->
+<!--    <solid android:color="@color/pink" />-->
+<!--    <stroke-->
+<!--        android:width="0dp"-->
+<!--        android:color="@android:color/transparent">-->
+
+<!--    </stroke>-->
+<!--    <corners-->
+<!--        android:topLeftRadius="8dp"-->
+<!--        android:topRightRadius="8dp" />-->
+<!--</shape>-->
+
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Background for the top part (title bar) of the dialog -->
+    <item
+        android:bottom="20dp"
+        android:top="0dp">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/pink" />
+        </shape>
+    </item>
+    <!-- Background for the rest of the dialog content -->
+    <item android:top="10dp">
+        <shape android:shape="rectangle">
+            <solid android:color="@android:color/white" /> <!-- Or any other color for the rest of the dialog -->
+        </shape>
+    </item>
+</layer-list>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <!-- for normal pdf file  -->
+    <!-- Image Resource IDs -->
+    <integer-array name="file_details_list_icon">
+        <item>@drawable/ic_rename_icon</item>
+        <item>@drawable/ic_delete_icon</item>
+        <item>@drawable/ic_reorder_icon</item>
+        <item>@drawable/ic_watermark_icon</item>
+        <item>@drawable/ic_lock_icon</item>
+        <item>@drawable/ic_split_icon</item>
+        <item>@drawable/ic_compress_icon</item>
+        <!-- Add more image resource IDs as needed -->
+    </integer-array>
+
+    <!-- for zip pdf file  -->
+    <!-- Image Resource IDs -->
+    <integer-array name="file_details_list_icon_for_zip">
+        <item>@drawable/ic_rename_icon</item>
+        <item>@drawable/ic_delete_icon</item>
+        <item>@drawable/ic_unzip_icon</item>
+    </integer-array>
+
+    <!-- for passProtect pdf file  -->
+    <!-- Image Resource IDs -->
+    <integer-array name="file_details_list_icon_for_passProtect">
+        <item>@drawable/ic_rename_icon</item>
+        <item>@drawable/ic_delete_icon</item>
+        <item>@drawable/ic_lock_icon</item>
+    </integer-array>
+
+    <!-- for normal pdf file  -->
+    <!-- Text Strings -->
+    <string-array name="file_details_list_text">
+        <item>@string/RENAME</item>
+        <item>@string/DELETE</item>
+        <item>@string/REORDER_PAGES</item>
+        <item>@string/WATERMARK</item>
+        <item>@string/PASSWORD</item>
+        <item>@string/SPLIT</item>
+        <item>@string/COMPRESS</item>
+        <!-- Add more text strings as needed -->
+    </string-array>
+
+    <!-- for zip file  -->
+    <!-- Text Strings -->
+    <string-array name="file_details_list_text_for_zip">
+        <item>@string/RENAME</item>
+        <item>@string/DELETE</item>
+        <item>@string/UNZIP</item>
+    </string-array>
+
+    <!-- for passProtect file  -->
+    <!-- Text Strings -->
+    <string-array name="file_details_list_text_for_passProtect">
+        <item>@string/RENAME</item>
+        <item>@string/DELETE</item>
+        <item>@string/REMOVE_PASSWORD</item>
+    </string-array>
+</resources>
